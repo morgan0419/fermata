@@ -1,0 +1,252 @@
+div{
+    /*border-style: dotted;*/
+}
+
+body {
+    font-family: impact;
+}
+.wrapper {
+    background-color: black;
+    color: fuchsia;
+    text-align: center;
+    justify-content: center;
+    display: grid; 
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+        "lotbcontent lotb"
+        "mtcontent mt"
+        "sncontent sn"
+        "gcontent g1"
+        "popcontent pop"
+        "rcontent r1"
+        "musthcontent musth"
+        "icontent i1"
+        "bcontent b1"
+        "ocontent o1"
+        "end1 end1"
+        ;  
+}
+
+a:link{
+    text-decoration: none;
+    font-size: 3vw;
+    color: black;
+}
+
+
+.lotb{
+    grid-area: lotb;
+    color: white;
+    font-size: 5vw;
+    line-height: 200px;
+    vertical-align: middle;
+    border-style:solid;
+    border-color: white;
+}
+
+.lotbcontent{
+    grid-area: lotbcontent;
+    font-size: 2vw;
+    color: black;
+    background-color: white;
+    padding: 15px;
+    border-style:solid;
+    border-color: black
+}
+
+.mt{
+    grid-area: mt;
+    color: white;
+    font-size: 5vw;
+    line-height: 200px;
+    vertical-align: middle;
+    border-style:solid;
+    border-color: white;
+}
+
+.mtcontent{
+    grid-area: mtcontent;
+    font-size: 2vw;
+    color: black;
+    background-color: white;
+    padding: 15px;
+    border-style:solid;
+    border-color: black
+}
+
+.sn{
+    grid-area: sn;
+    color: white;
+    font-size: 5vw;
+    line-height: 200px;
+    vertical-align: middle;
+    border-style:solid;
+    border-color: white;
+}
+
+.sncontent{
+    grid-area: sncontent;
+    font-size: 2vw;
+    color: black;
+    background-color: white;
+    padding: 15px;
+    border-style:solid;
+    border-color: black
+}
+
+.g1{
+    grid-area: g1;
+    color: white;
+    font-size: 5vw;
+    line-height: 200px;
+    vertical-align: middle;
+    border-style:solid;
+    border-color: white;
+}
+
+.gcontent{
+    grid-area: gcontent;
+    font-size: 2vw;
+    color: black;
+    background-color: white;
+    padding: 15px;
+    border-style:solid;
+    border-color: black
+}
+
+.pop{
+    grid-area: pop;
+    color: white;
+    font-size: 5vw;
+    line-height: 200px;
+    vertical-align: middle;
+    border-style:solid;
+    border-color: white;
+}
+
+.popcontent{
+    grid-area: popcontent;
+    font-size: 2vw;
+    color: black;
+    background-color: white;
+    padding: 15px;
+    border-style:solid;
+    border-color: black
+}
+
+.r1{
+    grid-area: r1;
+    color: white;
+    font-size: 5vw;
+    line-height: 200px;
+    vertical-align: middle;
+    border-style:solid;
+    border-color: white;
+}
+
+.rcontent{
+    grid-area: rcontent;
+    font-size: 2vw;
+    color: black;
+    background-color: white;
+    padding: 15px;
+    border-style:solid;
+    border-color: black
+}
+
+.musth{
+    grid-area: musth;
+    color: white;
+    font-size: 5vw;
+    line-height: 200px;
+    vertical-align: middle;
+    border-style:solid;
+    border-color: white;
+}
+
+.musthcontent{
+    grid-area: musthcontent;
+    font-size: 2vw;
+    color: black;
+    background-color: white;
+    padding: 15px;
+    border-style:solid;
+    border-color: black
+}
+
+.i1{
+    grid-area: i1;
+    color: white;
+    font-size: 5vw;
+    line-height: 200px;
+    vertical-align: middle;
+    border-style:solid;
+    border-color: white;
+}
+
+.icontent{
+    grid-area: icontent;
+    font-size: 2vw;
+    color: black;
+    background-color: white;
+    padding: 15px;
+    border-style:solid;
+    border-color: black
+}
+
+.b1{
+    grid-area: b1;
+    color: white;
+    font-size: 5vw;
+    line-height: 200px;
+    vertical-align: middle;
+    border-style:solid;
+    border-color: white;
+}
+
+.bcontent{
+    grid-area: bcontent;
+    font-size: 2vw;
+    color: black;
+    background-color: white;
+    padding: 15px;
+    border-style:solid;
+    border-color: black
+}
+
+.o1{
+    grid-area: o1;
+    color: white;
+    font-size: 5vw;
+    line-height: 200px;
+    vertical-align: middle;
+    border-style:solid;
+    border-color: white;
+}
+
+.ocontent{
+    grid-area: ocontent;
+    font-size: 2vw;
+    color: black;
+    background-color: white;
+    padding: 15px;
+    border-style:solid;
+    border-color: black
+}
+
+.end1{
+    grid-area: end1;
+    color:lightyellow
+        ;
+    font-size: 4vw;
+    font-style: oblique;
+}
+
+img {
+    width: 100%;
+}
+
+.bass {
+    width: 50%;
+}
+
