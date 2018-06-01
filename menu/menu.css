@@ -1,0 +1,36 @@
+/*https://www.w3schools.com/Css/tryit.asp?filename=trycss_navbar_horizontal_black_active is where I got the navigation menu idea from.*/
+
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: lightgray;
+    font-family: Jazz LET, fantasy;
+}
+
+.menu li {
+    float:left;
+    justify-content: center;
+    font-family: Jazz LET, fantasy;
+}
+
+.menu li a {
+    display:block;
+    color: black;
+    text-align: center;
+    padding: 8px 10px;
+    text-decoration: none;
+    font-family: Jazz LET, fantasy;
+}
+
+.menu li a:hover:not(.active) {
+    background-color: gray;
+    font-family:Jazz LET, fantasy;
+}
+
+.menu .active {
+    background-color: #4CAF50;
+    font-family: Jazz LET, fantasy	;
+}
