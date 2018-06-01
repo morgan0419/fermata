@@ -1,0 +1,120 @@
+/* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_slidetop is hwere i got the idea for the collage with pictures and the text comes up when you hover. */
+
+.wrapper{
+    background-color: ;
+    color: ;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    grid-template-areas:
+        "fermata fermata fermata"
+        "mission mission mission"
+        "in1 in2 in3"
+        "a1 a3 a2"
+
+        ;
+    justify-content: center;
+    font-family:Blippo, fantasy;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: 1s ease;
+}
+
+#ferimage {
+    max-width: 600px;
+    width: 50%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#fer {
+    background-color: dodgerblue;
+}
+
+.fermata{
+    display: block;
+    margin-left: 100%;
+    margin-right: 100%;
+    font-size: 4.5vw;
+}
+
+#mission {
+    grid-area: mission;
+    background-color: white;
+}
+#in1{
+    grid-area: in1;
+    background-color: palevioletred;
+}
+
+#in2{
+    grid-area: in2;
+    background-color: indianred;
+}
+
+#in3{
+    grid-area: in3;
+    background-color: darkred;
+}
+
+#a1{
+    grid-area: a1;
+    background-color: skyblue;
+}
+
+#a2{
+    grid-area: a2;
+    background-color: steelblue;
+}
+
+#a3{
+    grid-area: a3;
+    background-color:lightseagreen;
+}
+
+.mm{
+    grid-area: mm;
+    color: skyblue;
+}
+
+.inn{
+    grid-area: inn;
+    color: blueviolet;
+}
+
+
+.container:hover .overlay {
+    height: 100%;
+}
+
+.text {
+    color: white;
+    font-size: 1.5vw;
+    position: absolute;
+    text-align: center;
+    padding: 3px;
+}
+
+
+
