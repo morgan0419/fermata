@@ -1,0 +1,214 @@
+/* I got the outline for this from this website..https://gridbyexample.com/examples/example11. This is the css for the jeopardy page.*/
+
+body{
+    background-color: black;
+    color: orange;
+    text-align: center;
+    font-family: impact, fantasy;
+}
+
+.wrapper {
+    background-color: black;
+    color:orange;
+    text-align: center;
+    display: grid;
+    grid-gap: .1vw;
+    grid-template-columns: 15% 15% 15% 15% 15% 15%;
+    grid-template-areas:
+        "genres instruments orchestra staff band general"
+        "g200 i200 o200 s200 b200 ge200"
+        "g400 i400 o400 s400 b400 ge400"
+        "g600 i600 o600 s600 b600 ge600"
+        "g800 i800 o800 s800 b800 ge800"
+        "g1000 i1000 o1000 s1000 b1000 ge1000"
+        ;
+    justify-content: center;
+}
+
+
+.jeopardy{
+    font-size: 13vw;
+    background-color: black;
+    width: 100%;
+}
+
+.instructions{
+    color: peru;
+    font-size: 2vw;
+}
+
+
+.box em {
+    font-style: normal;
+    font-size: 0vw;
+}
+.box i {
+    font-size: 0vw;
+}
+
+.box {
+    background-color: blue;
+    transition-duration: 1s;
+    font-size: 2.5vw;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+.box:hover em{
+    font-size: 1.2vw;
+    transition-duration: 1s;
+}
+.box:hover b{
+    font-size: 0vw;
+    transition-duration: 1s;
+}
+
+.box:active i{
+    font-style: normal;
+    font-size: 1.2vw;
+    transition-duration: 1s;
+}
+
+
+
+
+.box:hover b {
+    font-size: 0vw;
+    transition-duration: 1s;
+}
+.box:active em{
+    font-size: 0vw;
+    transition-duration: 1s;
+}
+
+.genres {
+    grid-area: genres;
+    background-color: blue;
+    font-size: 2.8vw;
+}
+.g200 {
+    grid-area: g200;
+}
+.g400{
+    grid-area: g400;
+}
+.g600{
+    grid-area: g600;
+}
+.g800{
+    grid-area: g800;
+}
+.g1000{
+    grid-area: g1000;
+}
+.instruments {
+    grid-area: instruments;
+    background-color: blue;
+    font-size: 2.8vw;
+}
+.i200 {
+    grid-area: i200;
+}
+.i400{
+    grid-area: i400;
+}
+.i600{
+    grid-area: i600;
+}
+.i800{
+    grid-area: i800;
+    background-color: blue;
+}
+.i1000{
+    grid-area: i1000;
+}
+.orchestra {
+    grid-area: orchestra;
+    background-color: blue;
+    font-size: 2.8vw;
+}
+.o200 {
+    grid-area: o200;
+}
+
+.o400{
+    grid-area: o400;
+}
+.o600{
+    grid-area: o600;
+}
+.o800{
+    grid-area: o800;
+}
+.o1000{
+    grid-area: o1000;
+}
+.band {
+    grid-area: band;
+    background-color: blue;
+    font-size: 2.8vw;
+}
+.b200 {
+    grid-area: b200;
+}
+
+.b400{
+    grid-area: b400;
+}
+
+.b600{
+    grid-area: b600;
+}
+
+.b800{
+    grid-area: b800;
+}
+.b1000{
+    grid-area: b1000;
+}
+.staff {
+    grid-area: staff;
+    background-color: blue;
+    font-size: 2.8vw;
+}
+
+.s200 {
+    grid-area: s200;
+}
+.s400{
+    grid-area: s400;
+}
+.s600{
+    grid-area: s600;
+}
+.s800{
+    grid-area: s800;
+}
+.s1000{
+    grid-area: s1000;
+}
+
+
+.general {
+    grid-area: general;
+    background-color: blue;
+    font-size: 2.8vw;
+}
+.ge200 {
+    grid-area: ge200;
+}
+
+.ge400{
+    grid-area: ge400;
+}
+
+.ge600{
+    grid-area: ge600;
+}
+
+.ge800{
+    grid-area: ge800;
+}
+.ge1000{
+    grid-area: ge1000;
+}

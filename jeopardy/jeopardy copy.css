@@ -1,0 +1,852 @@
+/* So I got the outline for this from this website..https://gridbyexample.com/examples/example11/  5/10 update:there's some sort of bug in this code not allowing it to look like a jeopardy board. im gonna try to fix this hopefully by tomorrow.*/
+
+body {
+    background-color: black;
+    color:orange;
+    text-align: center;
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: 15% 15% 15% 15% 15% 15%;
+    grid-template-areas:
+        "genres instruments orchestra composers band random"
+        "g200 i200 o200 c200 b200 r200"
+        "g400 i400 o400 c400 b400 r400"
+        "g600 i600 o600 c600 b600 r600"
+        "g800 i800 o800 c800 b800 r800"
+        "g1000 i1000 o1000 c1000 b1000 r1000"
+        ;
+    justify-content: center;
+}
+
+div em {
+    font-size: 0px;
+}
+div i {
+    font-size: 0px;
+}
+
+.Genres {
+    grid-area: genres;
+    background-color: blue;
+}
+
+.G200 {
+    grid-area: g200;
+    background-color: blue;
+}
+.G200:active i{
+    grid-area: g200;
+    font-size: 20px;
+    transition-duration: 1s;
+}
+
+.G400{
+    grid-area: g400;
+    background-color: blue;
+}
+.G400:hover em{
+    font-size: 20px;
+    transition-duration: 1s;
+}
+.G400:hover b{
+    font-size: 0px;
+    transition-duration: 1s;
+}
+
+.G400:active i{
+    font-size: 20px;
+    transition-duration: 1s;
+}
+.G400:hover b {
+    font-size: 0px;
+    transition-duration: 1s;
+}
+.G400:active em{
+    font-size: 0px;
+    transition-duration: 1s;
+}
+
+
+
+.G600{
+    grid-area: g600;
+    background-color: blue;
+}
+.G600:hover em{
+    font-size: 20px;
+    transition-duration: 1s;
+}
+.G600:hover b{
+    font-size: 0px;
+    transition-duration: 1s;
+}
+
+.G600:active i{
+    font-size: 20px;
+    transition-duration: 1s;
+}
+.G600:hover b {
+    font-size: 0px;
+    transition-duration: 1s;
+}
+.G600:active em{
+    font-size: 0px;
+    transition-duration: 1s;
+}
+
+
+.G800{
+    grid-area: g800;
+    background-color: blue;
+}
+.G800:hover em{
+    font-size: 20px;
+    transition-duration: 1s;
+}
+.G800:hover b{
+    font-size: 0px;
+    transition-duration: 1s;
+}
+
+.G800:active i{
+    font-size: 20px;
+    transition-duration: 1s;
+}
+.G800:hover b {
+    font-size: 0px;
+    transition-duration: 1s;
+}
+.G800:active em{
+    font-size: 0px;
+    transition-duration: 1s;
+}
+
+
+
+.G1000{
+    grid-area: g1000;
+    background-color: blue;
+}
+
+.G1000:hover em{
+    font-size: 20px;
+    transition-duration: 1s;
+}
+.G1000:hover b{
+    font-size: 0px;
+    transition-duration: 1s;
+}
+
+.G1000:active i{
+    font-size: 20px;
+    transition-duration: 1s;
+}
+.G1000:hover b {
+    font-size: 0px;
+    transition-duration: 1s;
+}
+.G1000:active em{
+    font-size: 0px;
+    transition-duration: 1s;
+}
+
+
+
+
+.Instruments {
+    grid-area: instruments;
+    background-color: blue;
+
+}
+
+.I200 {
+    grid-area: i200;
+    background-color: blue;
+}
+.I200:hover em{
+    font-size: 20px;
+    transition-duration: 1s;
+}
+.I200:hover b{
+    font-size: 0px;
+    transition-duration: 1s;
+}
+
+.I200:active i{
+    font-size: 20px;
+    transition-duration: 1s;
+}
+.I200:hover b {
+    font-size: 0px;
+    transition-duration: 1s;
+}
+.I200:active em{
+    font-size: 0px;
+    transition-duration: 1s;
+}
+
+.I400{
+    grid-area: i400;
+    background-color: blue;
+}
+.I400:hover em{
+    font-size: 20px;
+    transition-duration: 1s;
+}
+.I400:hover b{
+    font-size: 0px;
+    transition-duration: 1s;
+}
+
+.I400:active i{
+    font-size: 20px;
+    transition-duration: 1s;
+}
+.I400:hover b {
+    font-size: 0px;
+    transition-duration: 1s;
+}
+.I400:active em{
+    font-size: 0px;
+    transition-duration: 1s;
+}
+
+.I600{
+    grid-area: i600;
+    background-color: blue;
+}
+.I600:hover em{
+    font-size: 20px;
+    transition-duration: 1s;
+}
+.I600:hover b{
+    font-size: 0px;
+    transition-duration: 1s;
+}
+
+.I600:active i{
+    font-size: 20px;
+    transition-duration: 1s;
+}
+.I600:hover b {
+    font-size: 0px;
+    transition-duration: 1s;
+}
+.I600:active em{
+    font-size: 0px;
+    transition-duration: 1s;
+}
+
+.I800{
+    grid-area: i800;
+    background-color: blue;
+}
+.I800:hover em{
+    font-size: 20px;
+    transition-duration: 1s;
+}
+.I800:hover b{
+    font-size: 0px;
+    transition-duration: 1s;
+}
+
+.I800:active i{
+    font-size: 20px;
+    transition-duration: 1s;
+}
+.I800:hover b {
+    font-size: 0px;
+    transition-duration: 1s;
+}
+.I800:active em{
+    font-size: 0px;
+    transition-duration: 1s;
+}
+.I1000{
+    grid-area: i1000;
+    background-color: blue;
+}
+.I1000:hover em{
+    font-size: 20px;
+    transition-duration: 1s;
+}
+.I1000:hover b{
+    font-size: 0px;
+    transition-duration: 1s;
+}
+
+.I1000:active i{
+    font-size: 20px;
+    transition-duration: 1s;
+}
+.I1000:hover b {
+    font-size: 0px;
+    transition-duration: 1s;
+}
+.I1000:active em{
+    font-size: 0px;
+    transition-duration: 1s;
+}
+
+.Orchestra {
+    grid-area: orchestra;
+    background-color: blue;
+}
+
+.O200 {
+    grid-area: o200;
+    background-color: blue;
+}
+.O200:hover em{
+    font-size: 20px;
+    transition-duration: 1s;
+}
+.O200:hover b{
+    font-size: 0px;
+    transition-duration: 1s;
+}
+
+.O200:active i{
+    font-size: 20px;
+    transition-duration: 1s;
+}
+.O200:hover b {
+    font-size: 0px;
+    transition-duration: 1s;
+}
+.O200:active em{
+    font-size: 0px;
+    transition-duration: 1s;
+}
+
+.O400{
+    grid-area: o400;
+    background-color: blue;
+}
+.O400:hover em{
+    font-size: 20px;
+    transition-duration: 1s;
+}
+.O400:hover b{
+    font-size: 0px;
+    transition-duration: 1s;
+}
+
+.O400:active i{
+    font-size: 20px;
+    transition-duration: 1s;
+}
+.O400:hover b {
+    font-size: 0px;
+    transition-duration: 1s;
+}
+.O400:active em{
+    font-size: 0px;
+    transition-duration: 1s;
+}
+
+.O600{
+    grid-area: o600;
+    background-color: blue;
+}
+.O600:hover em{
+    font-size: 20px;
+    transition-duration: 1s;
+}
+.O600:hover b{
+    font-size: 0px;
+    transition-duration: 1s;
+}
+
+.O600:active i{
+    font-size: 20px;
+    transition-duration: 1s;
+}
+.O600:hover b {
+    font-size: 0px;
+    transition-duration: 1s;
+}
+.O600:active em{
+    font-size: 0px;
+    transition-duration: 1s;
+}
+.O800{
+    grid-area: o800;
+    background-color: blue;
+}
+.O800:hover em{
+    font-size: 20px;
+    transition-duration: 1s;
+}
+.O800:hover b{
+    font-size: 0px;
+    transition-duration: 1s;
+}
+
+.O800:active i{
+    font-size: 20px;
+    transition-duration: 1s;
+}
+.O800:hover b {
+    font-size: 0px;
+    transition-duration: 1s;
+}
+.O800:active em{
+    font-size: 0px;
+    transition-duration: 1s;
+}
+.O1000{
+    grid-area: o1000;
+    background-color: blue;
+}
+.O1000:hover em{
+    font-size: 20px;
+    transition-duration: 1s;
+}
+.O1000:hover b{
+    font-size: 0px;
+    transition-duration: 1s;
+}
+
+.O1000:active i{
+    font-size: 20px;
+    transition-duration: 1s;
+}
+.O1000:hover b {
+    font-size: 0px;
+    transition-duration: 1s;
+}
+.O1000:active em{
+    font-size: 0px;
+    transition-duration: 1s;
+}
+
+.Band {
+    grid-area: band;
+    background-color: blue;
+}
+
+.B200 {
+    grid-area: b200;
+    background-color: blue;
+}
+.B200:hover em{
+    font-size: 20px;
+    transition-duration: 1s;
+}
+.B200:hover b{
+    font-size: 0px;
+    transition-duration: 1s;
+}
+
+.B200:active i{
+    font-size: 20px;
+    transition-duration: 1s;
+}
+.B200:hover b {
+    font-size: 0px;
+    transition-duration: 1s;
+}
+.B200:active em{
+    font-size: 0px;
+    transition-duration: 1s;
+}
+
+.B400{
+    grid-area: b400;
+    background-color: blue;
+}
+.B400:hover em{
+    font-size: 20px;
+    transition-duration: 1s;
+}
+.B400:hover b{
+    font-size: 0px;
+    transition-duration: 1s;
+}
+
+.B400:active i{
+    font-size: 20px;
+    transition-duration: 1s;
+}
+.B400:hover b {
+    font-size: 0px;
+    transition-duration: 1s;
+}
+.B400:active em{
+    font-size: 0px;
+    transition-duration: 1s;
+}
+
+.B600{
+    grid-area: b600;
+    background-color: blue;
+}
+.B600:hover em{
+    font-size: 20px;
+    transition-duration: 1s;
+}
+.B600:hover b{
+    font-size: 0px;
+    transition-duration: 1s;
+}
+
+.B600:active i{
+    font-size: 20px;
+    transition-duration: 1s;
+}
+.B600:hover b {
+    font-size: 0px;
+    transition-duration: 1s;
+}
+.B600:active em{
+    font-size: 0px;
+    transition-duration: 1s;
+}
+
+.B800{
+    grid-area: b800;
+    background-color: blue;
+}
+.B800:hover em{
+    font-size: 20px;
+    transition-duration: 1s;
+}
+.B800:hover b{
+    font-size: 0px;
+    transition-duration: 1s;
+}
+
+.B800:active i{
+    font-size: 20px;
+    transition-duration: 1s;
+}
+.B800:hover b {
+    font-size: 0px;
+    transition-duration: 1s;
+}
+.B800:active em{
+    font-size: 0px;
+    transition-duration: 1s;
+}
+.B1000{
+    grid-area: b1000;
+    background-color: blue;
+}
+.B1000:hover em{
+    font-size: 20px;
+    transition-duration: 1s;
+}
+.B1000:hover b{
+    font-size: 0px;
+    transition-duration: 1s;
+}
+
+.B1000:active i{
+    font-size: 20px;
+    transition-duration: 1s;
+}
+.B1000:hover b {
+    font-size: 0px;
+    transition-duration: 1s;
+}
+.B1000:active em{
+    font-size: 0px;
+    transition-duration: 1s;
+}
+
+.Composers {
+    grid-area: composers;
+    background-color: blue;
+}
+
+.C200 {
+    grid-area: c200;
+    background-color: blue;
+}
+.C200:hover em{
+    font-size: 20px;
+    transition-duration: 1s;
+}
+.C200:hover b{
+    font-size: 0px;
+    transition-duration: 1s;
+}
+
+.C200:active i{
+    font-size: 20px;
+    transition-duration: 1s;
+}
+.C200:hover b {
+    font-size: 0px;
+    transition-duration: 1s;
+}
+.C200:active em{
+    font-size: 0px;
+    transition-duration: 1s;
+}
+.C200:hover em{
+    font-size: 20px;
+    transition-duration: 1s;
+}
+.C200:hover b{
+    font-size: 0px;
+    transition-duration: 1s;
+}
+
+.C200:active i{
+    font-size: 20px;
+    transition-duration: 1s;
+}
+.C200:hover b {
+    font-size: 0px;
+    transition-duration: 1s;
+}
+.C200:active em{
+    font-size: 0px;
+    transition-duration: 1s;
+}
+
+
+.C400{
+    grid-area: c400;
+    background-color: blue;
+}
+.C400:hover em{
+    font-size: 20px;
+    transition-duration: 1s;
+}
+.C400:hover b{
+    font-size: 0px;
+    transition-duration: 1s;
+}
+
+.C400:active i{
+    font-size: 20px;
+    transition-duration: 1s;
+}
+.C400:hover b {
+    font-size: 0px;
+    transition-duration: 1s;
+}
+.C400:active em{
+    font-size: 0px;
+    transition-duration: 1s;
+}
+
+.C600{
+    grid-area: c600;
+    background-color: blue;
+}
+.C600:hover em{
+    font-size: 20px;
+    transition-duration: 1s;
+}
+.C600:hover b{
+    font-size: 0px;
+    transition-duration: 1s;
+}
+
+.C600:active i{
+    font-size: 20px;
+    transition-duration: 1s;
+}
+.C600:hover b {
+    font-size: 0px;
+    transition-duration: 1s;
+}
+.C600:active em{
+    font-size: 0px;
+    transition-duration: 1s;
+}
+
+
+.C800{
+    grid-area: c800;
+    background-color: blue;
+}
+
+.C800:hover em{
+    font-size: 20px;
+    transition-duration: 1s;
+}
+.C800:hover b{
+    font-size: 0px;
+    transition-duration: 1s;
+}
+
+.C800:active i{
+    font-size: 20px;
+    transition-duration: 1s;
+}
+.C800:hover b {
+    font-size: 0px;
+    transition-duration: 1s;
+}
+.C800:active em{
+    font-size: 0px;
+    transition-duration: 1s;
+}
+
+.C1000{
+    grid-area: c1000;
+    background-color: blue;
+}
+.C1000:hover em{
+    font-size: 20px;
+    transition-duration: 1s;
+}
+.C1000:hover b{
+    font-size: 0px;
+    transition-duration: 1s;
+}
+
+.C1000:active i{
+    font-size: 20px;
+    transition-duration: 1s;
+}
+.C1000:hover b {
+    font-size: 0px;
+    transition-duration: 1s;
+}
+.C1000:active em{
+    font-size: 0px;
+    transition-duration: 1s;
+}
+
+
+.Random {
+    grid-area: random
+        background-color: blue;
+}
+
+.R200 {
+    grid-area: r200;
+    background-color: blue;
+}
+.R200:hover em{
+    font-size: 20px;
+    transition-duration: 1s;
+}
+.R200:hover b{
+    font-size: 0px;
+    transition-duration: 1s;
+}
+
+.R200:active i{
+    font-size: 20px;
+    transition-duration: 1s;
+}
+.R200:hover b {
+    font-size: 0px;
+    transition-duration: 1s;
+}
+.R200:active em{
+    font-size: 0px;
+    transition-duration: 1s;
+}
+
+
+.R400{
+    grid-area: r400;
+    background-color: blue;
+}
+.R400:hover em{
+    font-size: 20px;
+    transition-duration: 1s;
+}
+.R400:hover b{
+    font-size: 0px;
+    transition-duration: 1s;
+}
+
+.R400:active i{
+    font-size: 20px;
+    transition-duration: 1s;
+}
+.R400:hover b {
+    font-size: 0px;
+    transition-duration: 1s;
+}
+.R400:active em{
+    font-size: 0px;
+    transition-duration: 1s;
+}
+
+.R600{
+    grid-area: r600;
+    background-color: blue;
+}
+.R600:hover em{
+    font-size: 20px;
+    transition-duration: 1s;
+}
+.R600:hover b{
+    font-size: 0px;
+    transition-duration: 1s;
+}
+
+.R600:active i{
+    font-size: 20px;
+    transition-duration: 1s;
+}
+.R600:hover b {
+    font-size: 0px;
+    transition-duration: 1s;
+}
+.R600:active em{
+    font-size: 0px;
+    transition-duration: 1s;
+}
+
+.R800{
+    grid-area: r800;
+    background-color: blue;
+}
+.R800:hover em{
+    font-size: 20px;
+    transition-duration: 1s;
+}
+.R800:hover b{
+    font-size: 0px;
+    transition-duration: 1s;
+}
+
+.R800:active i{
+    font-size: 20px;
+    transition-duration: 1s;
+}
+.R800:hover b {
+    font-size: 0px;
+    transition-duration: 1s;
+}
+.R800:active em{
+    font-size: 0px;
+    transition-duration: 1s;
+}
+.R1000{
+    grid-area: r1000;
+    background-color: blue;
+}
+.R1000:hover em{
+    font-size: 20px;
+    transition-duration: 1s;
+}
+.R1000:hover b{
+    font-size: 0px;
+    transition-duration: 1s;
+}
+
+.R1000:active i{
+    font-size: 20px;
+    transition-duration: 1s;
+}
+.R1000:hover b {
+    font-size: 0px;
+    transition-duration: 1s;
+}
+.R1000:active em{
+    font-size: 0px;
+    transition-duration: 1s;
+}
+
