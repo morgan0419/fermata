@@ -1,0 +1,144 @@
+body{
+    background-color: black;
+    color: white;
+    font-family: Helvetica, sans-serif;
+}
+
+.wrapper{
+    background-color:  ;
+    color:white;
+    text-align: ;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+        "ent ent"
+        "morganhadi duet"
+        "singers celene"
+        "choir fg"
+        "hadi instruments"
+        "hadiviolin instruments2"
+        "hallelujahpractice orchestra"
+        ;
+}
+
+.ent{
+    grid-area: ent;
+    font-size: 4vw;
+}
+.singers{
+    grid-area: singers;
+    font-size: 2vw;
+    color: white;
+    background-color: black;
+    padding: 4vw;
+    border-style:solid;
+    border-color: white;
+}
+
+.celene{
+    grid-area: celene;
+    color: white;
+    background-color: white;
+    padding: 15px;
+    border-style:solid;
+    border-color: black
+}
+
+
+.choir{
+    grid-area: choir;
+    font-size: 2vw;
+    color: white;
+    background-color: black;
+    padding: 4vw;
+    border-style:solid;
+    border-color: white;
+}
+
+.fg{
+    grid-area: fg;
+    color: white;
+    background-color: white;
+    padding: 4vw;
+    border-style:solid;
+    border-color: black
+}
+
+.hadi{
+    grid-area: hadi;
+    font-size: 2vw;
+    color: white;
+    background-color: black;
+    padding: 4vw;
+    border-style:solid;
+    border-color: white;
+}
+
+.instruments{
+    grid-area: instruments;
+    color: white;
+    background-color: white;
+    padding: 4vw;
+    border-style:solid;
+    border-color: black;
+
+}
+
+.hadiviolin{
+    grid-area: hadiviolin;
+    font-size: 2vw;
+    color: white;
+    background-color: black;
+    padding: 4vw;
+    border-style:solid;
+    border-color: white;
+}
+.instruments2{
+    grid-area: instruments2;
+    color: white;
+    background-color: white;
+    padding: 4vw;
+    border-style:solid;
+    border-color: black;
+}
+
+.hallelujahpractice{
+    grid-area: hallelujahpractice;
+    font-size: 2vw;
+    color: white;
+    background-color: black;
+    padding: 4vw;
+    border-style:solid;
+    border-color: white;
+
+}
+.orchestra{
+    grid-area: orchestra;
+    color: white;
+    background-color: white;
+    padding: 4vw;
+    border-style:solid;
+    border-color: black;
+
+}
+.morganhadi{
+    grid-area: morganhadi;
+    font-size: 2vw;
+    color: white;
+    background-color: black;
+    padding: 4vw;
+    border-style:solid;
+    border-color: white;
+}
+
+.duet{
+    grid-area: duet;
+    color: white;
+    background-color: white;
+    padding: 4vw;
+    border-style:solid;
+    border-color: black;
+}
+
+
+
